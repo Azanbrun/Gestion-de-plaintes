@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Déposer une plainte</title>
+    <link rel="stylesheet" href="../css/plainte.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">Gestion des Plaintes</div>
+            <nav>
+                <button class="btn-outline">Connexion</button>
+            </nav>
+        </div>
+    </header>
+    <div class="page-container">
+        <div class="card">
+            <h2>Déposer une plainte</h2>
+            <form action="#">
+                <label for="name">Nom complet:</label>
+                <input type="text" id="name" name="name" placeholder="Entrez votre nom complet:" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Entrez votre email:" required>
+
+                <label for="subject">Sujet de la plainte:</label>
+                <input type="text" id="subject" name="subject" placeholder="Entrez le sujet de votre plainte:" required>
+
+                <label for="categorie">Categorie</label>
+                <select id="categorie" name="categorie" required>
+                    <option value="" disabled selected>Choisir une catégorie</option>
+                    <option value="service">Service</option>
+                    <option value="personnel">Personnel</option>
+                    <option value="produit">Produit</option>
+                    <option value="autre">Autre</option>
+                </select>
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" placeholder="Décrivez votre plainte en détail:" required></textarea>
+
+                <label for="fichier">Pièce jointe (facultatif)</label>
+                <input type="file" id="fichier" name="fichier" accept=".jpg,.jpeg,.png,.pdf">
+
+                <button type="submit" class="btn-plainte">Soumettre la plainte</button>
+            </form>
+        </div>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; 2025 Gestion des Plaintes. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>
