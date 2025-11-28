@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suivi des plaintes</title>
+    <link rel="stylesheet" href="../css/plainte.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">Gestion des Plaintes</div>
+            <nav>
+                <button class="btn-outline">Connexion</button>
+            </nav>
+        </div>
+    </header>
+    <div class="page-container">
+        <h2 style="margin-bottom: 20px;">Suivi des plaintes</h2>
+        <div class="card" style="margin-bottom: 20px;">
+            <label for="">Filtrer par Statut</label>
+            <select id="statut" name="statut" required>
+                <option value="" disabled selected>Choisir un statut</option>
+                <option value="tous">Tous</option>
+                <option value="en-cours">En cours</option>
+                <option value="resolue">Résolue</option>
+                <option value="fermee">Fermée</option>
+            </select>
+        </div>
+        <div class="card" style="margin-bottom: 20px;">
+            <h3 style="margin-bottom: 10px;">Problème de connexion au service</h3>
+            <p style="margin-bottom: 8px;"><strong>Categorie:</strong> Service</p>
+            <p style="margin-bottom: 8px;"><strong>Statut:</strong> <span style="color: #2563EB;font-weight: bold;">En cours</span> En cours</p>
+            <p style="margin-bottom: 15px; font-size: 14px;color: #555;">Votre plainte est actuellement en cours de traitement</p>
+            
+            <a href="./plainte-details.html">
+                <button>Voir les détails</button>
+            </a>
+  </div>
+
+  <!-- Carte plainte 2 -->
+        <div class="card" style="margin-bottom:20px;">
+            <h3 style="margin-bottom:10px;">Mauvais accueil du personnel</h3>
+                <p style="margin-bottom:8px;"><strong>Catégorie :</strong> Personnel</p>
+                 <p style="margin-bottom:8px;"><strong>Statut :</strong> 
+            <span style="color:green; font-weight:bold;">Traitée</span>
+                </p>
+            <p style="margin-bottom:15px; font-size:14px; color:#555;">
+                Une réponse est maintenant disponible.
+            </p>
+
+            <a href="./plainte-details.html">
+            <button>Voir les détails</button>
+            </a>
+        </div>
+
+  <!-- Carte plainte 3 -->
+  <div class="card" style="margin-bottom:20px;">
+    <h3 style="margin-bottom:10px;">Produit non conforme</h3>
+    <p style="margin-bottom:8px;"><strong>Catégorie :</strong> Produit</p>
+    <p style="margin-bottom:8px;"><strong>Statut :</strong> 
+      <span style="color:red; font-weight:bold;">Rejetée</span>
+    </p>
+    <p style="margin-bottom:15px; font-size:14px; color:#555;">
+      Votre plainte n’a pas pu être validée.
+    </p>
+
+    <a href="./plainte-details.html">
+      <button>Voir les détails</button>
+    </a>
+  </div>
+        </div>
+    </div>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; 2025 Gestion des Plaintes. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>
